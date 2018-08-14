@@ -40,12 +40,12 @@ git diff
 # show alterations between files in current branch and remote
 git diff -p file-name
 # show alterations between files in current branch and remote specifying a commit
-git diff -p nome-do-arquivo f90b0dd3949..70ad8038d0		///Ver diff entre 2 versões
+git diff -p nome-do-arquivo f90b0dd3949..70ad8038d0
 
 
 # altering repository url 
-git remote set-url origin ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/Ferramenta_Cacuria
+git remote set-url origin ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/foo
 # upload a existent repository
-git push ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/Ferramenta_Cacuria --all		///Upload de um repositorio git existente
+git push ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/foo --all
 ````
 
