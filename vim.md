@@ -1,4 +1,4 @@
-### VIM commands
+### [VIM](https://www.vim.org/) commands
 
 #### Launch VIM
 - Open document
