@@ -1,4 +1,4 @@
-### Git commands
+### [Git](https://git-scm.com/) commands
 
 #### General
 - Commiting
