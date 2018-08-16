@@ -18,6 +18,29 @@ vim -o document_1 document_2
 vim -p document_1 document_2
 ````
 
+#### Handle document
+- Go to the first line
+````bash
+gg
+````
+- Go to the last line
+````bash
+G
+````
+- Go to the line i
+````bash
+iG
+:i
+````
+- Select string
+````bash
+shift+8
+````
+- Search a string selected
+````bash
+n
+````
+
 #### Tabs
 - Show Tabs
 ````bash
