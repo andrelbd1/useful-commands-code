@@ -19,7 +19,7 @@ ipython
 
 -  Show complete box
 ````bash
-a<Tab>  **first car and hit tab**
+a<Tab>
 ````
 
 - Shows info about variable, docstrings if it is function/class
