@@ -1,28 +1,39 @@
 ### [Angular](http://angular.io) commands
 
 
-#### Create a project
+#### Project
+- Create a project
 ````bash
 ng new name-project
 ````
-
-#### Open a Angular project
+- Open a project
 ````bash
 cd name-project
 ng serve --open
 ````
 
-#### Create a component
+#### Component
+- Create a component
 ````bash
 ng generate component name-component
 ````
 
-#### Create a service
+#### Service
+- Create a service
 ````bash
 ng generate service name-service
 ````
 
-#### Create a module
+#### Module
+- Create a module
 ````bash
 ng generate module name-module
+````
+- Put the file in `src/app` instead of its own folder
+````bash
+ng generate module name-module --flat
+````
+- Tells the CLI to register it in the imports array of the AppModule
+````bash
+ng generate module name-module --module=app
 ````
