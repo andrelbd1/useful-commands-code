@@ -1,5 +1,12 @@
 ### [Ginga](http://www.ginga.org.br/) commands
 
+#### Install on Ubuntu
+````bash
+sudo add-apt-repository ppa:telemidia/daily-builds
+sudo apt-get update
+sudo apt-get install ginga-itv
+````
+
 #### Compile
 ````bash
 ./bootstrap
