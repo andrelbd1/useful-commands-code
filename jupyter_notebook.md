@@ -38,11 +38,6 @@ a??
 !ls -la
 ````
 
-- Running a script. No need to import, just run
-````bash
-run foo.py
-````
-
 - Using debug
 ````bash
 debug #just after exceptation
@@ -59,7 +54,22 @@ prun -l -s foo()
 import foo_lib
 ````
 
-- Restarting code
+- Load code
+````bash
+load foo_lib.py
+````
+
+- Run a script. No need to import, just run
+````bash
+run foo.py
+````
+
+- Restart code
 ````bash
 reload(foo_lib)
+````
+
+- List commands
+````bash
+lsmagic
 ````
