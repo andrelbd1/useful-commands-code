@@ -3,7 +3,7 @@
 
 #### Open Jupyter Notebook
 ````bash
-jupyter notebook
+jupyter-notebook
 ````
 
 #### Open python
