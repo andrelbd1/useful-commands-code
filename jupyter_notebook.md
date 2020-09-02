@@ -73,3 +73,21 @@ reload(foo_lib)
 ````bash
 lsmagic
 ````
+
+- Shows how much time a code needs to run
+````bash
+%time a = some_function()  #Return the running time on this line
+
+%timeit a = some_function() #Return more details, such number of loops
+
+%%time	#Return the running time about all the code below
+a = some_funtion()
+b = some_another_function()
+````
+
+- Shows the list of variables in your environment
+````bash
+%who_ls 		#Outputs a list of all interactive variables in your environment
+
+%who_ls function	#Reduces the output to interactive variables of type "function"
+````
