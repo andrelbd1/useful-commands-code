@@ -69,6 +69,11 @@ run foo.py
 reload(foo_lib)
 ````
 
+- Display all the content of the external file as its output
+````bash
+%pycat foo.py
+````
+
 - List commands
 ````bash
 lsmagic
