@@ -113,7 +113,7 @@ screen.colorDepth
 
 - Return the deep of pixels on the screen.
 ````bash
-screen.pixelDepth					//Retorna a profundidade de pixels da tela.
+screen.pixelDepth
 ````
 
 - Return URL from the current window.
@@ -136,18 +136,48 @@ window.location.pathname
 window.location.protocol
 ````
 
+- Return the browser's name (e.g., IE11, Chrome, Firefox, and Safari 'Netscape').
+````bash
+navigator.appName
+````
+
+- Return the browser's codename (e.g., IE11, Chrome, Firefox, and Safari 'Mozilla').
+````bash
+navigator.appCodeName
+````
+
+- Return the SO used to run the current browser (e.g., Linux, Windows).
+````bash
+navigator.platform
+````
+
+- Return the engine's name used on the browser.
+````bash
+navigator.product
+````
+
+- Return the language set on the browser (e.g., pt-br, en-us).
+````bash
+navigator.language
+````
+
 #### Replace values
-- Replace a content value from a element.
+- Replace a content's value from an element.
 ````bash
 element.innerHTML =  new html content
 ````
 
-- Replace a attribute value from a element.
+- Replace a content's value from an element specified by id.
+````bash
+document.getElementById("id").innerHTML = "text"
+````
+
+- Replace a attribute's value from an element.
 ````bash
 element.attribute = new value	
 ````
 
-- Replace a attribute value from a element.
+- Replace a attribute's value from an element.
 ````bash
 element.setAttribute(attribute, value)	
 ````
@@ -155,6 +185,11 @@ element.setAttribute(attribute, value)
 - Replace element's style.
 ````bash
 element.style.property = new style
+````
+
+- Replace an attribute's value from an element specified by id.
+````bash
+document.getElementById("id")."any attribute" = "text"
 ````
 
 - Replace the HTML document.
@@ -183,3 +218,63 @@ window.moveTo()
 window.resizeTo()
 ````
 
+- Load a new document.
+````bash
+window.location.assign(URL)
+````
+
+- Display a popup.
+````bash
+window.alert("text")
+````
+
+#### Console
+- Display a onformation on browser's console.
+````bash
+console.log(5 + 6)
+````
+
+#### Trigger
+- Trigger a function after a specified time.
+````bash
+window.setTimeout(function, milliseconds)
+````
+
+- Trigger a function over and over in a specified interval.
+````bash
+window.setInterval(function, milliseconds)
+````
+
+- Trigger a function by a click event.
+````bash
+<script>
+function myFunction()
+{	
+    document.getElementById("id").innerHTML = "text";
+}
+</script>
+
+<tag onclick="myFunction()"> </tag>	
+````
+
+- Trigger a function to replace the HTML document by a click event.
+````bash
+<tag onclick="document.write("text")">text</tag>
+````
+
+- Trigger a function to replace a content's value from an element by a click event.
+````bash
+<tag onclick="this.innerHTML="text"">text</tag>
+````
+
+- Assign an event to a element through addEventListener().
+````bash
+<script>
+element.addEventListener("click", displayDate);
+
+function displayDate() 
+{
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+````
