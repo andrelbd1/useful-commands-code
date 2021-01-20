@@ -34,11 +34,19 @@ iG
 ````
 - Select string
 ````bash
-shift+8
+*
 ````
 - Search a string selected
 ````bash
 n
+````
+- Undo
+````bash
+u
+````
+- Redo
+````bash
+ctrl+r
 ````
 
 #### Tabs
