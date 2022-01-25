@@ -21,7 +21,10 @@ git pull origin branch-name
 ````bash
 git mergetool
 ````
-
+- Undo commits permanently 
+````bash
+git reset --hard branch-name
+````
 #### Logs
 - Checking commit logs
 ````bash
