@@ -32,7 +32,7 @@ a?
 a??
 ````
 
-- normal git command inside Ipython. Most of the Unix commands can be used this way
+- Normal git command inside Ipython. Most of the Unix commands can be used this way
 ````bash
 !git
 !ls -la

@@ -45,3 +45,31 @@ psql -U [username]
 ````bash
 \du
 ````
+- List tables in lock
+````bash
+SELECT
+  l.locktype,
+  t.relname,
+  l.page,
+  l.virtualtransaction,
+  l.pid,
+  l.mode,
+  l.granted
+FROM pg_locks l,
+     pg_stat_all_tables t
+WHERE l.relation = t.relid
+AND t.relname NOT IN ('pg_class', 'pg_index', 'pg_namespace')
+ORDER BY relation ASC;
+````
+- Stop/Kill a query
+   - This basically "starts" a request to terminate gracefully, which may be satisfied after some time, though the query comes back immediately.
+````bash
+SELECT pg_cancel_backend([pid of the process])
+````
+   - If the process cannot be killed, try:
+````bash
+SELECT pg_terminate_backend([pid of the process])
+````
+
+
+

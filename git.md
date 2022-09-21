@@ -1,6 +1,15 @@
 ### [Git](https://git-scm.com/) commands
 
 #### General
+- List config
+````bash
+git config --list
+````
+- Set config
+````bash
+git config --global user.name "Fulano de Tal"
+git config --global user.email fulanodetal@exemplo.br
+````
 - Commiting
 ````bash
 git commit -a -m "Lorem Ipsum"
@@ -21,10 +30,18 @@ git pull origin branch-name
 ````bash
 git mergetool
 ````
-- Undo commits permanently 
+- Undo commits permanently and also throw away any uncommitted changes
 ````bash
 git reset --hard branch-name
 ````
+````bash
+git reset --hard HEAD~
+````
+- Undo the most recent local commits while leaving your working tree (the state of your files on disk) untouched
+````bash
+git reset HEAD~1
+````
+
 #### Logs
 - Checking commit logs
 ````bash
@@ -52,6 +69,10 @@ git branch
 - create a branch
 ````bash
 git branch nome_branch
+````
+- create a branch off from the main branch
+````bash
+git checkout -b nome_branch main
 ````
 - show all branches
 ````bash
