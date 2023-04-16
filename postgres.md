@@ -5,6 +5,9 @@
 ````bash
 psql -U [username]
 ````
+````bash
+psql -h [host] -p [port] -U [username] [database]
+````
 - Connect to a specific database
 ````bash
 \c [database_name]

@@ -83,14 +83,36 @@ git branch -a
 git branch -r
 ````
 
+#### Stash
+- save modified and staged changes
+````bash
+git stash
+````
+- list stack-order of stashed file changes
+````bash
+git stash list
+````
+- write working from the top of the stash stack
+````bash
+git stash pop
+````
+- discard the changes from the top od the stash stack
+````bash
+git stash drop
+````
+
 #### Diff
 - show alterations to be sent
 ````bash
 git diff --stat
 ````
-- show alterations in current branch
+- show alterations in current branch of what is changed but not staged
 ````bash
 git diff
+````
+- show alterations in currnt branch of what is staged but not yet commited
+````bash
+git diff --staged
 ````
 - show alterations between files in current branch and remote
 ````bash
