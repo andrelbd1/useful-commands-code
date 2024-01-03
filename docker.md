@@ -1,13 +1,13 @@
 ### [Docker](https://docs.docker.com/) commands
 
-#### Conectar Docker daemon
+#### Connecting Docker daemon
 - Executar docker daemon.
 ````bash
 systemctl start docker
 ````
 
-#### Permitir acesso ao docker sem usar sudo
-- Criar o docker group e add usuário. É necessário fazer logoff e login.
+#### Allowing access to docker without use sudo
+- Creating a docker group and adding user. It is required to do logoff and login.
 ````bash
 sudo groupadd docker
 sudo usermod -aG docker $USER
@@ -41,6 +41,16 @@ docker restart [CONTAINER IDs]
 - Remove containers
 ````bash
 docker rm [CONTAINER IDs]
+````
+
+- Copying file to the container
+````bash
+docker cp foo.txt container_id:/foo.txt
+````
+
+- Copying file from the container
+````bash
+docker cp container_id:/foo.txt foo.txt
 ````
 
 #### Handle container
