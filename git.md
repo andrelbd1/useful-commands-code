@@ -41,6 +41,10 @@ git reset --hard HEAD~
 ````bash
 git reset HEAD~1
 ````
+- Untrack a file that has been committed
+````bash
+git rm -r --cached file-name
+````
 
 #### Logs
 - Checking commit logs
@@ -120,10 +124,14 @@ git diff -p file-name
 ````
 - show alterations between files in current branch and remote specifying a commit
 ````bash
-git diff -p nome-do-arquivo f90b0dd3949..70ad8038d0
+git diff -p file-name f90b0dd3949..70ad8038d0
 ````
 
 #### Repository
+- show repository url
+````bash
+git remote -v
+````
 - altering repository url
 ````bash
 git remote set-url origin ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/foo
