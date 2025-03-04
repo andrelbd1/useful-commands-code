@@ -3,106 +3,106 @@
 #### Launch VIM
 - Open document
 ````bash
-vim document
+    vim document
 ````
 - Launch VIM with split window vertically
 ````bash
-vim -O document_1 document_2
+    vim -O document_1 document_2
 ````
 - Launch VIM with split window horizontally
 ````bash
-vim -o document_1 document_2
+    vim -o document_1 document_2
 ````
 - Launch VIM with tabs
 ````bash
-vim -p document_1 document_2
+    vim -p document_1 document_2
 ````
 
 #### Handle document
 - Go to the first line
 ````bash
-gg
+    gg
 ````
 - Go to the last line
 ````bash
-G
+    G
 ````
 - Go to the line i
 ````bash
-iG
-:i
+    iG
+    :i
 ````
 - Select string
 ````bash
-*
+    *
 ````
 - Search a string selected
 ````bash
-n
+    n
 ````
 - Undo
 ````bash
-u
+    u
 ````
 - Redo
 ````bash
-ctrl+r
+    ctrl+r
 ````
 
 #### Tabs
 - Show Tabs
 ````bash
-:tabs
+    :tabs
 ````
 - Create Tab
 ````bash
-:tabnew
+    :tabnew
 ````
 - Close current tab
 ````bash
-:tabclose
+    :tabclose
 ````
 - Close current tab in `normal mode`
 ````bash
-ctrl+w c
+    ctrl+w c
 ````
 - Move current tab to first
 ````bash
-:tabm 0
+    :tabm 0
 ````
 - Move current tab to last
 ````bash
-:tabm
+    :tabm
 ````
 - Move current tab to position i+1
 ````bash
-:tabm {i}
+    :tabm {i}
 ````
 - Go to next tab
 ````bash
-:tabn
+    :tabn
 ````
 - Go to previous tab
 ````bash
-:tabp
+    :tabp
 ````
 - Go to first tab
 ````bash
-:tabfirst
+    :tabfirst
 ````
 - Go to last tab
 ````bash
-:tablast
+    :tablast
 ````
 - Go to next tab in `normal mode`
 ````bash
-gt
+    gt
 ````
 - Go to previous tab in `normal mode`
 ````bash
-gT
+    gT
 ````
 - Go to tab in position i in `normal mode`
 ````bash
-{i}gt
+    {i}gt
 ````

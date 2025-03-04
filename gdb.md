@@ -3,113 +3,113 @@
 #### General
 - Start GDB
 ````bash
-gdb [program]
+    gdb [program]
 ````
 - Running
 ````bash
-run [args]
+    run [args]
 ````
 - Kill the running;
 ````bash
-kill
+    kill
 ````
 #### Breakpoints
 - Set a breakpoint
 ````bash
-break [where (e.g., function, line)]
+    break [where (e.g., function, line)]
 ````
 - Remove a breakpoint
 ````bash
-delete [breakpoint#]
+    delete [breakpoint#]
 ````
 - Remove all breakpoints
 ````bash
-clear
+    clear
 ````
 - Enable a disabled breakpoint
 ````bash
-enable [breakpoint#]
+    enable [breakpoint#]
 ````
 - Disable a breakpoint
 ````bash
-disable [breakpoint#]
+    disable [breakpoint#]
 ````
 #### Examining the stack
 - Show call stack
 ````bash
-backtrace
+    backtrace
 ````
 - Show current line
 ````bash
-frame
+    frame
 ````
 #### Stepping 
 - Go to the next instruction, but don't dive into functions
 ````bash
-next
+    next
 ````
 -  Go to the next instruction, diving into function
 ````bash
-step
+    step
 ````
 - Continue norma execution
 ````bash
-continue
+    continue
 ````
 - Continue until the current function returns
 ````bash
-finish
+    finish
 ````
 #### Variables and memory
 - Print content of variable/memory location/register
 ````bash
-print [something (e.g., variable)]
+    print [something (e.g., variable)]
 ````
 #### Threads
 - Chose thread to operate on
 ````bash
-thread [thread#]
+    thread [thread#]
 ````
 #### Manipulating the program
 - Change the content of a variable to the given value
 ````bash
-set var [variable_name]=[value]
+    set var [variable_name]=[value]
 ````
 - Force the current function to return immdiately, passing the given value
 ````bash
-return [expression]
+    return [expression]
 ````
 #### Sources
 - Shows the current or given source context
 ````bash
-list
-list [filename]:[function]
-list [filename]:[line number]
-list [first line],[last line]
+    list
+    list [filename]:[function]
+    list [filename]:[line number]
+    list [first line],[last line]
 ````
 #### Informations
 - Print arguments to the function of the current stack frame 
 ````bash
-info args
+    info args
 ````
 - Print informations about the breakpoints
 ````bash
-info breakpoints
+    info breakpoints
 ````
 - Print the local variables in the currently selected stack frame
 ````bash
-info locals
+    info locals
 ````
 - List loaded shared libraries 
 ````bash
-info sharedlibrary
+    info sharedlibrary
 ````
 - List all threads
 ````bash
-info threads
+    info threads
 ````
 - Print type of named variable
 ````bash
-whatis [variable_name]
+    whatis [variable_name]
 ````
 

@@ -9,6 +9,10 @@
 ````bash
     find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf
 ````
+- Understand how a particular function or module works
+````bash
+    help(<FUNCTION or MODULE>)
+````
 
 #### Virtualenv General
 - Create virtual env and install libs from requirements file
@@ -70,7 +74,7 @@
 ````
 - Search version available to install
 ````bash
-    pyenv install --list|grep "3\.[678]"
+    pyenv install --list | grep "3\.[678]"
 ````
 
 #### PyTest
@@ -104,4 +108,3 @@
 ````bash
     snyk test
 ````
-

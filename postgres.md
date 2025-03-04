@@ -65,8 +65,8 @@
 ````
 
 ````bash
-   psql -h <host> -p <port> -U <user> -d <db> -f <sql file>
-   psql -h monitoring-prd.cluster-c.us-east-1.rds.amazonaws.com -p 5432 -U user_prd -d prd -f result_2024_10.sql
+    psql -h <host> -p <port> -U <user> -d <db> -f <sql file>
+    psql -h monitoring-prd.cluster-c.us-east-1.rds.amazonaws.com -p 5432 -U user_prd -d prd -f result_2024_10.sql
 ````
 
 - List tables in lock
@@ -114,4 +114,19 @@
 - Grant all privileges on all tables in the schema
 ````bash
     GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA schema_name TO username
+````
+
+- Reindex the Table (If Indexes Got Bloated)
+````bash
+    REINDEX TABLE <table_name>;
+````
+
+- Free Up Space, releases space back to the OS
+   - This locks the table, so it's best done during low-traffic periods.
+````bash
+    VACUUM FULL <table_name>;
+````
+   - Marks space as reusable but does not return it to the OS.
+````bash
+    VACUUM <table_name>;
 ````

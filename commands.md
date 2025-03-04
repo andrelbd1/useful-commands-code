@@ -12,6 +12,19 @@
     netstat -tulpn | grep :9000
 ````
 
+- Show env var
+````bash
+    printenv | grep <env var>
+    printenv | grep AWS
+````
+
+- Unset env var
+````bash
+    unset <env var>
+    unset AWS_SECRET_ACCESS_KEY
+    unset AWS_ACCESS_KEY_ID
+````
+
 #### Using apt
 - Update package list
 ````bash
@@ -110,15 +123,15 @@
     find . -name '*.so'
 ````
 
-#### Returning ubuntu informations
+#### Returning Ubuntu informations
 ````bash
     lsb_release -a
 ````
 
-#### Using mysql
+#### Using MySQL
 - Connecting
 ````bash
-    mysql -u root -p -h 187.33.4.241 (Conexao remota de banco de dados)
+    mysql -u root -p -h 187.33.4.241 (conexao remota de banco de dados)
 ````
 
 - Reiniciando o Apache e Mysql
@@ -133,6 +146,12 @@
     chmod -R 777 nome_pasta_ou_arquivo (permissao total do arquivo)
 ````
 
+#### Using gzip
+- Extrair arquivo
+````bash
+    gzip -d file.json.gz
+````
+
 #### Using tar
 - Extrair arquivo
 ````bash
@@ -142,12 +161,12 @@
 #### Using ssh and scp
 - Acessando pelo terminal
 ````bash
-  ssh root@192.168...
+    ssh root@192.168...
 ````
 
 - Acessando pelo terminal com senha
 ````bash
-  ssh -p 22022 andre@mediaboxtech.com
+    ssh -p 22022 andre@mediaboxtech.com
 ````
 
 - Upload para um servidor
@@ -170,7 +189,7 @@
 - Download de uma pasta passando o password de acesso
 ````bash
     sshpass -p <password> scp -rp <username>@<destination server>:<folder path> <destiny>
-    sshpass -p "password" scp -rp andre@139.82.24.96:"/media/infra/LES-PUC-RIO/Similiaridade/extracted_text" /home/andre/MPRJ/Similiaridade
+    sshpass -p "password" scp -rp andre@139.82.24.96:"/media/infra/extracted_text" /home/andre/Similiaridade
 ````
 
 #### Using du para retornar o tamanho de arquivo ou diretório em bytes (Kb/Mb)
