@@ -46,7 +46,7 @@
     echo 'eval "$(pyenv init -)"' >> ~/.bashrc
     source ~/.bashrc
 ````
-- Upadate list of python version
+- Update list of python version
 ````bash
     pyenv update
 ````
