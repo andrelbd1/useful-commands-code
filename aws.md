@@ -1,12 +1,26 @@
 ### [AWS](https://aws.amazon.com/pt/cli) commands
 
 #### General
+- Configure
+````bash
+    aws configure sso
+    
+    # Case aws --version >= 2.22.0
+    aws configure sso --use-device-code
+````
+
 - Login
 ````bash
     aws sso login
 ````
 ````bash
     aws sso login --profile <my profile> 
+    
+    # Case aws --version >= 2.22.0
+    aws sso login --profile <my profile> --use-device-code
+````
+````bash
+    aws sso login --profile 086874483813_sdz-data-eng-set
 ````
 ````bash
     aws sso login --profile 086874483813_sdz-data-eng-set

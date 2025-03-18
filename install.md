@@ -122,7 +122,7 @@
     sudo service apache2 restart
 ````
 
-### SonnarQube using Docker: 
+### SonarQube using Docker: 
 - Source: https://docs.sonarsource.com/sonarqube/10.5/setup-and-upgrade/install-the-server/installing-sonarqube-from-docker/
 
 - Create volume
@@ -143,7 +143,7 @@
 ````
 - PS: Default credentials: admin admin
 
-## SonnarScanner
+## SonarScanner
 - Source: https://joorgelm.medium.com/sonarscanner-instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-para-o-sonarqube-825d0b208c32
 - Download: https://docs.sonarqube.org/latest/analysis/scan/sonarscanner/
 - Save and extract file at /home
