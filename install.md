@@ -44,6 +44,7 @@
    - [Alphabetical App Grid](https://extensions.gnome.org/extension/4269/alphabetical-app-grid/)
    - [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
    - [Hide Activities Button](https://extensions.gnome.org/extension/744/hide-activities-button/)
+   - [Advanced Weather Companion](https://extensions.gnome.org/extension/7603/advanced-weather-companion/)
    - [OpenWeather Refined](https://extensions.gnome.org/extension/6655/openweather/)
    - [Panel World Clock (Lite)](https://extensions.gnome.org/extension/946/panel-world-clock-lite/)
    - [Places Status Indicator](https://extensions.gnome.org/extension/8/places-status-indicator/)

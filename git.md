@@ -10,6 +10,10 @@
     git config --global user.name "Fulano de Tal"
     git config --global user.email fulanodetal@exemplo.br
 ````
+- Adding files to stage
+````bash
+    git add file.txt
+````
 - Commiting
 ````bash
     git commit -a -m "Lorem Ipsum"
@@ -37,6 +41,13 @@
 - Remove the file only from the Git repository and not remove it from the filesystem
 ````bash
     git rm --cached file.txt
+````
+- Undo commits, but does not touch the index file or the working tree at all
+````bash
+    git reset --soft branch-name
+````
+````bash
+    git reset --soft HEAD~
 ````
 - Undo commits permanently and also throw away any uncommitted changes
 ````bash
