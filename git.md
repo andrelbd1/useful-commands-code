@@ -14,9 +14,17 @@
 ````bash
     git add file.txt
 ````
+- Adding part of the file
+````bash
+    git add -p
+````
 - Commiting
 ````bash
-    git commit -a -m "Lorem Ipsum"
+    git commit -m "Lorem ipsum"
+````
+- Fixing commit message
+````bash
+    git commit -m "Lorem ipsum dolor sit amet" --amend
 ````
 - Upload
 ````bash
