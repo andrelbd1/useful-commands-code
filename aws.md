@@ -21,9 +21,7 @@
 ````
 ````bash
     aws sso login --profile 086874483813_sdz-data-eng-set
-````
-````bash
-    aws sso login --profile 086874483813_sdz-data-eng-set
+    aws sso login --profile 086874483813_sdz-data-eng-set --use-device-code
 ````
 
 - List users
