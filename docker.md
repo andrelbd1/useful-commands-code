@@ -142,12 +142,35 @@
 ````bash
     docker container inspect  <CONTAINER ID or NAME> | grep -i mem
 ````
-- Build, (re)creates, starts, and attaches a container from a docker-compose.yaml
-````bash
-    docker-compose up
-    docker-compose --env-file .env up
-````
 - List all containers using an image
 ````bash
     docker container ls --all --filter=ancestor=<IMAGE ID> --format "{{.ID}}"
+````
+
+#### Volume
+- List volume
+````bash
+    docker volume ls
+````
+
+- Remove unused volumes
+````bash
+    docker volume prune
+````
+
+#### Compose
+- Build, (re)creates, starts, and attaches a container from a docker-compose.yaml
+````bash
+    docker compose up
+    docker compose --env-file .env up
+````
+- Show logs from a service
+````bash
+    docker compose logs -f -t <service>
+    docker compose logs -f -t -worker
+````
+- Scale a service
+````bash
+    docker compose scale <service>=<number>
+    docker compose scale worker=3
 ````
