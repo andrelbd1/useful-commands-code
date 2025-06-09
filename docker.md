@@ -101,6 +101,10 @@
 ````bash
     docker rm <CONTAINER IDs>
 ````
+- Remove containers with prefix
+````bash
+    docker rm -f $(docker ps -a --filter "name=^/[prefix]" --format "{{.ID}}")
+````
 - Update container's cpu (--cpu) and memory (-m)
 ````bash
     docker container update -m <MEMORY> --cpus=<CPU> <CONTAINER IDs or NAME>
