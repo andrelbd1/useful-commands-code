@@ -178,3 +178,11 @@
     docker compose scale <service>=<number>
     docker compose scale worker=3
 ````
+- Deletes named and anonymous volumes created by the compose file
+````bash
+    docker compose down --volumes
+````
+- Also removes containers not listed in the current compose file but attached to the same network
+````bash
+    docker compose down --volumes --remove-orphans
+````
