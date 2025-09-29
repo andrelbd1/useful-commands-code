@@ -192,6 +192,17 @@
     sshpass -p "password" scp -rp andre@139.82.24.96:"/media/infra/extracted_text" /home/andre/Similiaridade
 ````
 
+#### Using df para listar informações do sistema de arquivos
+- Listar o tamanho em escala de 1024
+````bash
+   df -h
+````
+
+- Listar o tamanho em escala de 1000
+````bash
+   df -H
+````
+
 #### Using du para retornar o tamanho de arquivo ou diretório em bytes (Kb/Mb)
 - Listar o tamanho de todos os arquivos dentro do diretório
 ````bash
