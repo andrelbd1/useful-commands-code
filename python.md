@@ -77,6 +77,20 @@
     pyenv install --list | grep "3\.[678]"
 ````
 
+#### UV
+- Installing uv
+````bash
+    # https://docs.astral.sh/uv/getting-started/installation/
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+````
+
+- Create virtual env and install python
+````bash
+    uv venv --python 3.12.6
+    source .venv/bin/activate
+````
+
+
 #### PyTest
 - Run cover test
 ````bash
